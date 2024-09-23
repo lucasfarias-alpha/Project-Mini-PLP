@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('../public/assets/fonts/static/RedHatText-Bold.ttf') format('truetype'),
+         url('../public//assets/fonts/static/RedHatText-Bold.ttf') format('truetype'),
+         url('../public//assets/fonts/static/RedHatText-SemiBold.ttf') format('truetype');
+
+  }
+  
+  @font-face {
+    font-family: 'RedHatText';
+    src: url('../public//assets/fonts/RedHatText-Italic-VariableFont_wght.ttf') format('truetype'),
+         url('../public//assets/fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
+  
+    font-style: italic; /* Italic */
+  }
+  
+
+  /* Estilização da barra de rolagem para WebKit (Chrome, Safari) */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px; /* Largura da barra */
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor do track (fundo) */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4; /* Cor do "polegar" da barra */
+  border-radius: 4px; /* Deixar os cantos arredondados */
+  border: 2px solid #f1f1f1; /* Borda para o polegar */
+}
+
+/* Estilização da scrollbar para Firefox */
+.overflow-y-auto {
+  scrollbar-width: thin; /* Deixa a scrollbar mais fina */
+  scrollbar-color: #c4c4c4 #f1f1f1; /* Cor do polegar e track */
+}
+
+  
